@@ -1,1 +1,1 @@
-# scraping-bot
+# scraping-script
