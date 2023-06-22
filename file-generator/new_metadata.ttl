@@ -1,0 +1,32 @@
+BASE <https://citygraph.co/opendata/GraduationRatebyLevelEntryTypeandNationalityCategory1998-2013/1/>
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX schema: <http://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX cube: <https://cube.link/>
+PREFIX dimension: <https://citygraph.co/opendata/GraduationRatebyLevelEntryTypeandNationalityCategory1998-2013/1/dimension/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX meta: <https://cube.link/meta/>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX time: <http://www.w3.org/2006/time#>
+
+
+<1> a cube:Cube ;
+  dcterms:description "Graduation Rate by Level Entry Type and Nationality Category"@en ;
+  dcterms:title "Graduation Rate by Level Entry Type and Nationality Category"@en ;
+  dcterms:identifier "Graduation Rate by Level Entry Type and Nationality Category"@en ;
+  schema:name "Graduation Rate by Level Entry Type and Nationality Category"@en ;
+  schema:description "Graduation Rate by Level Entry Type and Nationality Category"@en ;
+  schema:publisher <https://citygraph.co/opendata/cities> ;
+  schema:creator <https://citygraph.co/opendata/ZayedUniversity> ;
+  schema:contactPoint <https://citygraph.co/opendata/cities> ;
+  schema:contributor <https://citygraph.co/opendata/cities> ;
+  schema:creativeWorkStatus <https://ld.admin.ch/vocabulary/CreativeWorkStatus/Published> ;
+  schema:workExample <https://ld.admin.ch/application/visualize> ;
+  dcterms:creator <https://citygraph.co/opendata/cities> ;
+  dcterms:issued "2023-06-22"^^xsd:date ;
+  dcterms:publisher <https://citygraph.co/opendata/cities> ;
+  schema:dateCreated "2023-06-22"^^xsd:date ;
+  schema:datePublished "2023-06-22"^^xsd:date ;
+  schema:dateModified "2023-06-22"^^xsd:date .

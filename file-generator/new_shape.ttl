@@ -1,0 +1,47 @@
+BASE <https://citygraph.co/opendata/GraduationRatebyLevelEntryTypeandNationalityCategory1998-2013/1/>
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX schema: <http://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX cube: <https://cube.link/>
+PREFIX dimension: <https://citygraph.co/opendata/GraduationRatebyLevelEntryTypeandNationalityCategory1998-2013/1/dimension/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX meta: <https://cube.link/meta/>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX time: <http://www.w3.org/2006/time#>
+
+
+<1> cube:observationConstraint [
+  sh:property [
+    a cube:MeasureDimension;
+      sh:path dimension:graduationrate;
+      schema:name "Graduation Rate"@en;
+      qudt:scaleType qudt:RatioScale;
+      sh:datatype xsd:decimal
+  ],[
+    a cube:KeyDimension;
+      sh:path dimension:year;
+      schema:name "Year"@en;
+      qudt:scaleType qudt:NominalScale;
+      sh:datatype xsd:string
+  ],[
+    a cube:KeyDimension;
+      sh:path dimension:program;
+      schema:name "Program"@en;
+      qudt:scaleType qudt:NominalScale;
+      sh:datatype xsd:string
+  ],[
+    a cube:KeyDimension;
+      sh:path dimension:entrytype;
+      schema:name "Entry Type"@en;
+      qudt:scaleType qudt:NominalScale;
+      sh:datatype xsd:string
+  ],[
+    a cube:KeyDimension;
+      sh:path dimension:nationalitycategory;
+      schema:name "Nationality  Category"@en;
+      qudt:scaleType qudt:NominalScale;
+      sh:datatype xsd:string
+  ]
+] .
