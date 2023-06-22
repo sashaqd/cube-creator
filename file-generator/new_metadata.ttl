@@ -31,4 +31,5 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
   dcterms:publisher <https://citygraph.co/opendata/cities> ;
   schema:dateCreated "2023-06-22"^^xsd:date ;
   schema:datePublished "2023-06-22"^^xsd:date ;
+  schema:version "1"xsd^^:integer ;
   schema:dateModified "2023-06-22"^^xsd:date .

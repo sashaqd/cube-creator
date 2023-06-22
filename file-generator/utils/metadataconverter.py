@@ -99,6 +99,7 @@ class MetaDataConverter:
         metaData += '  dcterms:publisher <https://citygraph.co/opendata/cities> ;\n'
         metaData += f'  schema:dateCreated "{date.today()}"^^xsd:date ;\n'
         metaData += f'  schema:datePublished "{date.today()}"^^xsd:date ;\n'
+        metaData += f'  schema:version "{self.version}"xsd^^:integer ;\n'
         metaData += f'  schema:dateModified "{date.today()}"^^xsd:date .\n'     
 
         return metaData
