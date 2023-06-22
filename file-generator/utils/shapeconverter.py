@@ -7,9 +7,14 @@ class ShapeConverter:
         # filename without extension
         self.csv_file_path = csv_file_path
         self.file_name =  file.split('.')[0].strip()
-
         # version
         self.version = version
+
+        self.measure_dimensions = []
+        self.key_dimensions = []
+    
+    def get_key_dimensions(self):
+        return self.key_dimensions
 
     def generate_shape(self):
 
@@ -20,24 +25,21 @@ class ShapeConverter:
             reader = csv.reader(csv_file)
             header_row = next(reader)
             column_names = [str(cell) for cell in header_row]
-
-            measure_dimensions = []
-            key_dimensions = []
-
+           
             for column_name in column_names:
                 reader = csv.reader(csv_file)
                 csv_file.seek(0)
                 column_values = [str(row[column_names.index(column_name)]) for row in reader]
                 value = column_values[1]
                 try:
-                    value = float(value)        
-                    measure_dimensions.append(column_name)
+                    value = float(value)
+                    self.measure_dimensions.append(column_name)
 
                 except ValueError:
-                    key_dimensions.append(column_name)
+                    self.key_dimensions.append(column_name)
         
-        key_dimensions_wospace = [name.replace(" ", "") for name in key_dimensions]
-        measure_dimensions_wospace = [name.replace(" ", "") for name in measure_dimensions]
+        key_dimensions_wospace = [name.replace(" ", "") for name in self.key_dimensions]
+        measure_dimensions_wospace = [name.replace(" ", "") for name in self.measure_dimensions]
         
         shape = f"BASE <https://citygraph.co/opendata/{file_name}/>\n"
         shape+= "PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n"
@@ -46,7 +48,7 @@ class ShapeConverter:
         shape+= "PREFIX schema: <http://schema.org/>\n"
         shape+= "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n"
         shape+= "PREFIX cube: <https://cube.link/>\n"
-        shape+= f"PREFIX dimension: <https://citygraph.co/opendata/{file_name}/dimension/>\n"
+        shape+= f"PREFIX dimension: <https://citygraph.co/opendata/{file_name}/{self.version}/dimension/>\n"
         shape+= "PREFIX sh: <http://www.w3.org/ns/shacl#>\n"
         shape+= "PREFIX meta: <https://cube.link/meta/>\n"
         shape+= "PREFIX qudt: <http://qudt.org/schema/qudt/>\n"
@@ -57,7 +59,7 @@ class ShapeConverter:
 
         shape += f"<{self.version}> cube:observationConstraint [\n"
         shape += f"  sh:property [\n"
-        for dimension , dim_wospace in zip(measure_dimensions,measure_dimensions_wospace):
+        for dimension , dim_wospace in zip(self.measure_dimensions,measure_dimensions_wospace):
             shape += f"    a cube:MeasureDimension;\n"
             shape += f"      sh:path dimension:{dim_wospace.lower()};\n"
             shape += f"      schema:name \"{dimension}\"@en;\n"
@@ -65,7 +67,7 @@ class ShapeConverter:
             shape += f"      sh:datatype xsd:decimal\n"
             shape += f"  ],[\n"
 
-        for dimension , dim_wospace in zip(key_dimensions,key_dimensions_wospace):
+        for dimension , dim_wospace in zip(self.key_dimensions,key_dimensions_wospace):
             shape += f"    a cube:KeyDimension;\n"
             shape += f"      sh:path dimension:{dim_wospace.lower()};\n"
             shape += f"      schema:name \"{dimension}\"@en;\n"

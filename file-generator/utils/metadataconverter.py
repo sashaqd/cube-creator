@@ -70,7 +70,7 @@ class MetaDataConverter:
         metaData+= "PREFIX schema: <http://schema.org/>\n"
         metaData+= "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n"
         metaData+= "PREFIX cube: <https://cube.link/>\n"
-        metaData+= f"PREFIX dimension: <https://citygraph.co/opendata/{file_name}/dimension/>\n"
+        metaData+= f"PREFIX dimension: <https://citygraph.co/opendata/{file_name}/{self.version}/dimension/>\n"
         metaData+= "PREFIX sh: <http://www.w3.org/ns/shacl#>\n"
         metaData+= "PREFIX meta: <https://cube.link/meta/>\n"
         metaData+= "PREFIX qudt: <http://qudt.org/schema/qudt/>\n"

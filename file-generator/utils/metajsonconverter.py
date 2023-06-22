@@ -2,11 +2,11 @@ import json
 import csv
 
 class MetaJsonConverter:
-    def __init__(self, csv_file_path, file, version=1):
-
+    def __init__(self, csv_file_path, file, key_dimensions, version=1):
         # filename without extension
         self.filename = file.split('.')[0].strip()
         self.csv_file_path = csv_file_path
+        self.key_dimensions = key_dimensions
         
         # version
         self.version = version
@@ -35,7 +35,12 @@ class MetaJsonConverter:
                 except ValueError:
                     data_types.append("string")
 
-        key = column_names[0]
+        key = ""
+        # self.key_dimensions = [name.replace(" ", "") for name in self.key_dimensions]
+        for dim in self.key_dimensions:
+            key = key + "{" + dim + "}+" 
+        key = key.rstrip("+")
+        #key = column_names[0]
         json_data = {
             "@context": "http://www.w3.org/ns/csvw",
             "url": "file:input/{}".format(file_name+".csv"),
@@ -43,7 +48,7 @@ class MetaJsonConverter:
                 "delimiter": ","
             },
             "tableSchema": {
-                "aboutUrl": f"https://citygraph.co/opendata/{file_name}/{self.version}/{{{key}}}",
+                "aboutUrl": f"https://citygraph.co/opendata/{file_name}/{self.version}/{key}",
                 "columns": []
             }
         }
