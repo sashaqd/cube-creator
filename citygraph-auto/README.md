@@ -1,3 +1,3 @@
-#Citygraph 
-To execute script locally:
+## Citygraph 
+ To execute script locally:
 - `./upload.sh`
