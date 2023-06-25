@@ -1,0 +1,15 @@
+PREFIX schema: <http://schema.org/>
+
+DELETE {
+  GRAPH <https://lindas.admin.ch/foph/covid19> {
+    ?obs ?p1 ?o1.
+    ?s2 ?p2 ?obs.
+  }
+}
+WHERE {
+    GRAPH <https://lindas.admin.ch/foph/covid19> {
+      VALUES ?areas2remove {"unknown"}
+        ?obs <https://health.ld.admin.ch/foph/covid19/dimension/area> ?areas2remove.
+        {?obs ?p1 ?o1.} UNION {?s2 ?p2 ?obs.}
+    }
+}

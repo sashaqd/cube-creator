@@ -1,0 +1,15 @@
+output csvw
+
+map DimDoses from VaccinesDoses {
+    subject template "https://health.ld.admin.ch/foph/covid19/vaccinationProvider/{0}" with vaccine;
+
+    types
+        schema.TherapeuticProcedure
+        schema.DefinedTerm
+
+    properties
+        schema.name from vaccine;
+        schema.inDefinedTermSet constant "https://health.ld.admin.ch/foph/covid19/vaccination-providers";
+
+}
+

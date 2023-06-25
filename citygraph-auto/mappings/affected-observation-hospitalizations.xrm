@@ -1,0 +1,12 @@
+output csvw
+
+map ObsHospitalizations from Hospitalizations {
+    subject template "https://health.ld.admin.ch/foph/covid19/affected/{0}-{1}" with geoRegion datum;
+
+    properties
+        dimension.date from datum with datatype xsd.date;
+        dimension.area from geoRegion;
+        dimension.hospitalizations from entries with datatype xsd.integer;
+        dimension.population from pop with datatype xsd.integer;
+        dimension.cumulativeHospitalizations from sumTotal with datatype xsd.integer;
+}

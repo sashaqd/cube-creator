@@ -1,0 +1,15 @@
+output csvw
+
+map ObsDoses from VaccinesDoses {
+    subject template "https://health.ld.admin.ch/foph/covid19/vaccine-doses/{0}-{1}-{2}" with geoRegion date vaccine;
+
+    properties
+        dimension.date from date with datatype xsd.date;
+        dimension.area from geoRegion;
+        dimension.doses from entries with datatype xsd.integer;
+        dimension.cumulativeDoses from sumTotal with datatype xsd.integer;
+        dimension.populationPercentage from per100Persons with datatype xsd.decimal;
+        dimension.population from pop with datatype xsd.integer;
+        dimension.vaccinationProvider template "https://health.ld.admin.ch/foph/covid19/vaccinationProvider/{0}" with vaccine;
+
+}

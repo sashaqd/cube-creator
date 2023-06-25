@@ -1,0 +1,33 @@
+PREFIX schema: <http://schema.org/>
+PREFIX dimension: <https://health.ld.admin.ch/foph/covid19/dimension/>
+
+INSERT {
+  GRAPH <https://lindas.admin.ch/foph/covid19> {
+    ?new dimension:date ?date;
+        dimension:area ?area;
+        dimension:doses ?total_doses;
+        dimension:cumulativeDoses ?total_cum_doses;
+        dimension:populationPercentage ?total_pop_percentage;
+        dimension:population ?population;
+        dimension:vaccinationProvider <https://health.ld.admin.ch/foph/covid19/vaccinationProvider/all>;
+  }
+}
+WHERE {
+  GRAPH <https://lindas.admin.ch/foph/covid19> {
+    SELECT ?area ?date ?population ?new (SUM(?doses) AS ?total_doses) (SUM(?cum_doses) AS ?total_cum_doses) (round(SUM(?pop_percentage)*10000)/10000 AS ?total_pop_percentage)
+    WHERE {
+      GRAPH <https://lindas.admin.ch/foph/covid19> {
+      ?old dimension:vaccinationProvider/schema:inDefinedTermSet <https://health.ld.admin.ch/foph/covid19/vaccination-providers>;
+          dimension:doses ?doses;
+          dimension:cumulativeDoses ?cum_doses;
+          dimension:populationPercentage ?pop_percentage;
+          dimension:population ?population;
+          dimension:area ?area;
+          dimension:date ?date.
+
+        BIND(IRI(REPLACE(STR(?old), "([^-]+$)", "all")) as ?new)
+      }
+    }
+  GROUP BY ?area ?date ?population ?new
+  }
+}

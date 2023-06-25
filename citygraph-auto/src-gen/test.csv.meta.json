@@ -1,0 +1,37 @@
+{
+  "@context": "http://www.w3.org/ns/csvw",
+  "url": "file:input/KeyStatisticsofOilandGasActivity.csv",
+  "dialect": {
+    "delimiter": ","
+  },
+  "tableSchema": {
+    "aboutUrl": "https://citygraph.co/opendata/KeyStatisticsofOilandGasActivity/1/{Date}+{Emirate}+{Indicators}",
+    "columns": [
+      {
+        "propertyUrl": "https://citygraph.co/opendata/KeyStatisticsofOilandGasActivity/1/dimension/date",
+        "datatype": "decimal",
+        "titles": "Date"
+      },
+      {
+        "propertyUrl": "https://citygraph.co/opendata/KeyStatisticsofOilandGasActivity/1/dimension/emirate",
+        "datatype": "string",
+        "titles": "Emirate"
+      },
+      {
+        "propertyUrl": "https://citygraph.co/opendata/KeyStatisticsofOilandGasActivity/1/dimension/indicators",
+        "datatype": "string",
+        "titles": "Indicators"
+      },
+      {
+        "propertyUrl": "https://citygraph.co/opendata/KeyStatisticsofOilandGasActivity/1/dimension/indicators_values",
+        "datatype": "decimal",
+        "titles": "Indicators_values"
+      },
+      {
+        "propertyUrl": "https://citygraph.co/opendata/KeyStatisticsofOilandGasActivity/1/dimension/notes",
+        "datatype": "string",
+        "titles": "Notes"
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+Column, Scale, Dimension, Data Type
+Date, Interval, Key Dimension, Decimal
+Emirate, Nominal, Key Dimension, String
+Indicators, Nominal, Key Dimension, String
+Indicators_values, Ratio, Measure Dimension, Decimal
+Notes, Nominal, Measure Dimension, String

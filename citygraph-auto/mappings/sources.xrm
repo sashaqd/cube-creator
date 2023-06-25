@@ -1,0 +1,178 @@
+dialect CsvDialect {
+    delimiter ","
+}
+
+logical-source Deaths {
+    type csv
+    source "file:input/COVID19Death_geoRegion.csv"
+    dialect CsvDialect
+
+    referenceables
+        geoRegion
+        datum
+        entries
+        sumTotal
+        timeframe_14d
+        timeframe_all
+        offset_last7d
+        sumTotal_last7d
+        offset_last14d
+        sumTotal_last14d
+        offset_last28d
+        sumTotal_last28d
+        sum7d
+        sum14d
+        mean7d
+        mean14d
+        entries_diff_last_age
+        pop
+        inz_entries
+        inzsumTotal
+        inzmean7d
+        inzmean14d
+        inzsumTotal_last7d
+        inzsumTotal_last14d
+        inzsumTotal_last28d
+        inzsum7d
+        inzsum14d
+        sumdelta7d
+        inzdelta7d
+        type_col "type"
+        type_variant
+        version
+        datum_unit
+        entries_letzter_stand
+        entries_neu_gemeldet
+        entries_diff_last
+}
+
+logical-source Cases {
+    type csv
+    source "file:input/COVID19Cases_geoRegion.csv"
+    dialect CsvDialect
+
+    referenceables
+        geoRegion
+        datum
+        entries
+        sumTotal
+        timeframe_14d
+        timeframe_all
+        offset_last7d
+        sumTotal_last7d
+        offset_last14d
+        sumTotal_last14d
+        offset_last28d
+        sumTotal_last28d
+        sum7d
+        sum14d
+        mean7d
+        mean14d
+        entries_diff_last_age
+        pop
+        inz_entries
+        inzsumTotal
+        inzmean7d
+        inzmean14d
+        inzsumTotal_last7d
+        inzsumTotal_last14d
+        inzsumTotal_last28d
+        inzsum7d
+        inzsum14d
+        sumdelta7d
+        inzdelta7d
+        type_col "type"
+        type_variant
+        version
+        datum_unit
+        entries_letzter_stand
+        entries_neu_gemeldet
+        entries_diff_last
+}
+
+logical-source Hospitalizations {
+    type csv
+    source "file:input/COVID19Hosp_geoRegion.csv"
+    dialect CsvDialect
+
+    referenceables
+        geoRegion
+        datum
+        entries
+        sumTotal
+        timeframe_14d
+        timeframe_all
+        offset_last7d
+        sumTotal_last7d
+        offset_last14d
+        sumTotal_last14d
+        offset_last28d
+        sumTotal_last28d
+        sum7d
+        sum14d
+        mean7d
+        mean14d
+        entries_diff_last_age
+        pop
+        inz_entries
+        inzsumTotal
+        inzmean7d
+        inzmean14d
+        inzsumTotal_last7d
+        inzsumTotal_last14d
+        inzsumTotal_last28d
+        inzsum7d
+        inzsum14d
+        sumdelta7d
+        inzdelta7d
+        type_col "type"
+        type_variant
+        version
+        datum_unit
+        entries_letzter_stand
+        entries_neu_gemeldet
+        entries_diff_last
+}
+
+logical-source VaccinesOverview {
+    type csv
+    source "file:input/COVID19VaccPersons_v2.csv"
+    dialect CsvDialect
+
+    referenceables
+        date
+        geoRegion
+        entries
+        pop
+        sumTotal
+        per100Persons
+        per100Persons_mean7d
+        per100PersonsTotal
+        mean7d
+        type_col "type"
+        version
+        granularity
+        age_group
+}
+
+logical-source VaccinesDoses {
+    type csv
+    source "file:input/COVID19AdministeredDoses_vaccine.csv"
+    dialect CsvDialect
+
+    referenceables
+        date
+        geoRegion
+        vaccine
+        entries
+        type_variant
+        pop
+        sumTotal
+        per100Persons
+        per100Persons_mean7d
+        per100PersonsTotal
+        mean7d
+        type_col "type"
+        version
+        granularity
+}

@@ -1,0 +1,19 @@
+output csvw
+
+map ObsCases from Cases {
+    subject template "https://health.ld.admin.ch/foph/covid19/affected/{0}-{1}" with geoRegion datum;
+
+    properties
+        dimension.date from datum with datatype xsd.date;
+        dimension.area from geoRegion;
+        dimension.cases from entries with datatype xsd.integer;
+        dimension.population from pop with datatype xsd.integer;
+        dimension.cumulativeCases from sumTotal with datatype xsd.integer;
+}
+
+// map AffectedTimestamp from Cases {
+//     subject template "https://health.ld.admin.ch/foph/covid19/affected/";
+
+//     properties
+//         schema.validFrom from version;
+// }

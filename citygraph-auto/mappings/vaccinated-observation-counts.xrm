@@ -1,0 +1,15 @@
+output csvw
+
+map ObsVaccines from VaccinesOverview {
+    subject template "https://health.ld.admin.ch/foph/covid19/vaccinated-population/{0}-{1}-{2}-{3}" with geoRegion date age_group type_col;
+
+    properties
+        dimension.count from entries with datatype xsd.integer;
+        dimension.cumulativeCount from sumTotal with datatype xsd.integer;
+        dimension.populationPercentage from per100Persons with datatype xsd.decimal;
+        dimension.population from pop with datatype xsd.integer;
+        dimension.date from date with datatype xsd.date;
+        dimension.area from geoRegion;
+        dimension.ageGroup template "https://health.ld.admin.ch/foph/covid19/ageGroup/{0}" with age_group;
+        dimension.vaccinationStatus template "https://health.ld.admin.ch/foph/covid19/vaccinationStatus/{0}" with type_col;
+}

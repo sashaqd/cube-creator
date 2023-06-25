@@ -1,0 +1,13 @@
+output csvw
+
+map DimVaccinatedTypes from VaccinesOverview {
+    subject template "https://health.ld.admin.ch/foph/covid19/vaccinationStatus/{0}" with type_col;
+
+    types
+        schema.DefinedTerm
+
+    properties
+        schema.inDefinedTermSet constant "https://health.ld.admin.ch/foph/covid19/vaccination-status";
+
+}
+

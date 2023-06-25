@@ -1,0 +1,75 @@
+language-tags {
+    fr
+    de
+    en
+    it
+    rm
+}
+
+vocabulary xsd {
+    prefix "xsd" "http://www.w3.org/2001/XMLSchema#"
+
+    datatypes
+        integer
+        date
+        dateTime
+        boolean
+        decimal
+}
+
+vocabulary cube {
+    prefix "cube" "https://cube.link/"
+
+    classes
+        Cube
+        Constraint
+        ObservationSet
+        Observation
+        KeyDimension
+
+    properties
+        observationSet
+        observationShape
+        observation
+        observedBy
+}
+
+vocabulary schema {
+    prefix "schema" "http://schema.org/"
+
+    classes
+        DefinedTerm
+        TherapeuticProcedure
+
+    properties
+        name
+        termCode
+        identifier
+        validFrom
+        geographicArea
+        inDefinedTermSet
+}
+
+vocabulary dimension {
+    prefix "covid19" "https://health.ld.admin.ch/foph/covid19/dimension/"
+
+    properties
+        cases
+        deaths
+        hospitalizations
+        date
+        area
+        population
+        doses
+        count
+        vaccinationProvider
+        ageGroup
+        vaccinationStatus
+        cumulativeCases
+        cumulativeDoses
+        cumulativeDeaths
+        cumulativeHospitalizations
+        cumulativeCount
+        populationPercentage
+}
+
