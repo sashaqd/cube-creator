@@ -1,5 +1,3 @@
-# BAG covid19
-
+#Citygraph 
 To execute script locally:
-- setup environment variables in `.env` file (USER, PASSWORD, ENPOINT)
-- `./run.sh`
+- `./upload.sh`
