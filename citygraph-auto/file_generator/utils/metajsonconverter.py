@@ -2,11 +2,12 @@ import json
 import csv
 
 class MetaJsonConverter:
-    def __init__(self, csv_file_path, file, key_dimensions, version=1):
+    def __init__(self, csv_file_path, file, key_dimensions, data_types, version=1):
         # filename without extension
         self.filename = file.split('.')[0].strip()
         self.csv_file_path = csv_file_path
         self.key_dimensions = key_dimensions
+        self.data_types = data_types
         
         # version
         self.version = version
@@ -19,21 +20,7 @@ class MetaJsonConverter:
             reader = csv.reader(csv_file)
             header_row = next(reader)
             column_names = [str(cell) for cell in header_row]
-            column_names_wospace = [name.replace(" ", "") for name in column_names]
-
-            data_types = []
-
-            for column_name in column_names:
-                reader = csv.reader(csv_file)
-                csv_file.seek(0)
-                column_values = [str(row[column_names.index(column_name)]) for row in reader]
-                value = column_values[1]
-                try:
-                    value = float(value)
-                    data_types.append("decimal")
-
-                except ValueError:
-                    data_types.append("string")
+            column_names_wospace = [name.replace(" ", "") for name in column_names]     
 
         key = ""
         for dim in self.key_dimensions:
@@ -52,13 +39,22 @@ class MetaJsonConverter:
             }
         }
 
-        for name, data_type, col in zip(column_names, data_types, column_names_wospace):
-            column = {
-                "propertyUrl": f"https://citygraph.co/opendata/{file_name}/{self.version}/dimension/{col.lower()}",
-                "datatype": data_type,
-                "titles": name
-            }
-            json_data["tableSchema"]["columns"].append(column)
+        for name, col in zip(column_names, column_names_wospace):
+            try:
+                column = {
+                    "propertyUrl": f"https://citygraph.co/opendata/{file_name}/{self.version}/dimension/{col.lower()}",
+                    "datatype": self.data_types[col]["data_type"],
+                    "titles": name
+                }
+                json_data["tableSchema"]["columns"].append(column)
+            
+            except KeyError:
+                column = {
+                    "propertyUrl": f"https://citygraph.co/opendata/{file_name}/{self.version}/measure/{col.lower()}",
+                    "datatype": "string",
+                    "titles": name
+                }
+                json_data["tableSchema"]["columns"].append(column)
         
         return json.dumps(json_data, indent=2)
 

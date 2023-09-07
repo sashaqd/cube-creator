@@ -68,7 +68,10 @@ class MetaDataConverter:
         metaData += '  schema:contributor <https://citygraph.co/opendata/cities> ;\n'
         metaData += '  schema:creativeWorkStatus <https://ld.admin.ch/vocabulary/CreativeWorkStatus/Published> ;\n'
         metaData += '  schema:workExample <https://ld.admin.ch/application/visualize> ;\n'
-        link = self.link_dictionary[dir]['link']
+        try:
+            link = self.link_dictionary[dir]['link']
+        except:
+            link = ""
         metaData += f'  dcat:landingPage "{link}"^^xsd:string ;\n'
         metaData += f'  schema:dateCreated "{date.today()}"^^xsd:date ;\n'
         metaData += f'  schema:datePublished "{date.today()}"^^xsd:date ;\n'

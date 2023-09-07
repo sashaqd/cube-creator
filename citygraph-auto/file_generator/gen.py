@@ -6,34 +6,6 @@ import os
 import json
 import sys
 
-def add_index_column(csv_file_path):
-    with open(csv_file_path, 'r') as file:
-        reader = csv.reader(file)
-        data = list(reader)
-    # Add the "Index" column header to the first row
-    data[0].insert(0, "Index")
-    # Add row numbers to each row
-    for i in range(1, len(data)):
-        data[i].insert(0, i)
-    # Open the same CSV file in write mode
-    with open(csv_file_path, 'w', newline='') as file:
-        writer = csv.writer(file)
-        writer.writerows(data)
-
-def remove_index_column(csv_file_path):
-    with open(csv_file_path, 'r') as file:
-        # Read the existing data from the CSV file
-        reader = csv.reader(file)
-        data = list(reader)
-    # Check if the "Index" column exists in the first row
-    if "Index" in data[0]:
-        index_column_index = data[0].index("Index")
-        for row in data:
-            del row[index_column_index]
-        with open(csv_file_path, 'w', newline='') as file:
-            # Write the modified data back to the CSV file
-            writer = csv.writer(file)
-            writer.writerows(data)
 
 class dic_generator:
     def __init__(self,meta_file_path, other_meta_file_path, org_file_path, link_file_path ):
@@ -123,8 +95,9 @@ class file_generator:
         shape_obj = ShapeConverter(self.csv_file_path, self.file)
         shape = shape_obj.generate_shape()
         key_dimensions = shape_obj.get_key_dimensions()
-
-        json = MetaJsonConverter(self.csv_file_path, self.file, key_dimensions).generate_json()
+        data_types = shape_obj.get_data_types()
+        
+        json = MetaJsonConverter(self.csv_file_path, self.file, key_dimensions, data_types).generate_json()
         metadata = MetaDataConverter(self.dir, self.file, self.csv_file_path, self.meta_dictionary, self.other_meta_dictionary, self.org_dictionary, self.link_dictionary).generate_metaData()
 
         f1.write(json)

@@ -21,6 +21,12 @@ class ShapeConverter:
                 self.key_dimensions.append(col)
         return self.key_dimensions
 
+    def get_data_types(self):
+        data_types = {}
+        for col in self.shape_dict:
+            data_types[col] = {"data_type": self.shape_dict[col]['data_type']}
+        return data_types
+
     # def generate_shape(self):
 
     #     csv_file_path =  self.csv_file_path 
@@ -96,7 +102,7 @@ class ShapeConverter:
                     break
             string =  '\n'.join([','.join(row) for row in rows])
             openai.api_key = "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"
-            message = "classify the type of columns based on scale(ratio/interval/ordinal/nominal) , classify if it should be a (key dimension/measure dimension) , classify it's data type (string/decimal) for the given input, the output should be printed as a csv (column,scale,dimension,data type) : "
+            message = "classify the type of columns based on scale(ratio/interval/ordinal/nominal) , classify if it should be a (key dimension/measure dimension) , classify it's data type (string/integer/decimal) for the given input, the output should be printed as a csv (column,scale,dimension,data type) : "
             message += string
             response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
@@ -123,13 +129,14 @@ class ShapeConverter:
                     row = row.split(",")
                     scale = "RatioScale" if "ratio" in row[1].lower() else "IntervalScale" if "interval" in row[1].lower() else "OrdinalScale" if "ordinal" in row[1].lower() else "NominalScale"
                     dimension = "MeasureDimension" if "measure" in row[2].lower() else "KeyDimension"
-                    type = row[3].replace(" ", "").lower()
+                    type = row[3].replace(" ", "").lower().rstrip('\n')
                     dict[row[0]] = {'scale':scale,'dimension':dimension,'data_type':type}
                 flag = 1  
             file.close()
             return dict
 
     def generate_shape(self):
+
         file_name = self.file_name
         shape = f"BASE <https://citygraph.co/opendata/{file_name}/>\n"
         shape+= "PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n"

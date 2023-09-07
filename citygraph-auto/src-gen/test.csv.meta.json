@@ -1,36 +1,41 @@
 {
   "@context": "http://www.w3.org/ns/csvw",
-  "url": "file:input/KeyStatisticsofOilandGasActivity.csv",
+  "url": "file:input/PaymentsBalance-MillionUSD2010-2017.csv",
   "dialect": {
     "delimiter": ","
   },
   "tableSchema": {
-    "aboutUrl": "https://citygraph.co/opendata/KeyStatisticsofOilandGasActivity/1/{Date}+{Emirate}+{Indicators}",
+    "aboutUrl": "https://citygraph.co/opendata/PaymentsBalance-MillionUSD2010-2017/1/{Item_EN}+{Item_AR}+{Type_EN}+{Type_AR}",
     "columns": [
       {
-        "propertyUrl": "https://citygraph.co/opendata/KeyStatisticsofOilandGasActivity/1/dimension/date",
+        "propertyUrl": "https://citygraph.co/opendata/PaymentsBalance-MillionUSD2010-2017/1/dimension/year",
+        "datatype": "integer",
+        "titles": "year"
+      },
+      {
+        "propertyUrl": "https://citygraph.co/opendata/PaymentsBalance-MillionUSD2010-2017/1/dimension/item_en",
+        "datatype": "string",
+        "titles": "Item_EN"
+      },
+      {
+        "propertyUrl": "https://citygraph.co/opendata/PaymentsBalance-MillionUSD2010-2017/1/dimension/item_ar",
+        "datatype": "string",
+        "titles": "Item_AR"
+      },
+      {
+        "propertyUrl": "https://citygraph.co/opendata/PaymentsBalance-MillionUSD2010-2017/1/dimension/type_en",
+        "datatype": "string",
+        "titles": "Type_EN"
+      },
+      {
+        "propertyUrl": "https://citygraph.co/opendata/PaymentsBalance-MillionUSD2010-2017/1/dimension/type_ar",
+        "datatype": "string",
+        "titles": "Type_AR"
+      },
+      {
+        "propertyUrl": "https://citygraph.co/opendata/PaymentsBalance-MillionUSD2010-2017/1/dimension/usd_million",
         "datatype": "decimal",
-        "titles": "Date"
-      },
-      {
-        "propertyUrl": "https://citygraph.co/opendata/KeyStatisticsofOilandGasActivity/1/dimension/emirate",
-        "datatype": "string",
-        "titles": "Emirate"
-      },
-      {
-        "propertyUrl": "https://citygraph.co/opendata/KeyStatisticsofOilandGasActivity/1/dimension/indicators",
-        "datatype": "string",
-        "titles": "Indicators"
-      },
-      {
-        "propertyUrl": "https://citygraph.co/opendata/KeyStatisticsofOilandGasActivity/1/dimension/indicators_values",
-        "datatype": "decimal",
-        "titles": "Indicators_values"
-      },
-      {
-        "propertyUrl": "https://citygraph.co/opendata/KeyStatisticsofOilandGasActivity/1/dimension/notes",
-        "datatype": "string",
-        "titles": "Notes"
+        "titles": "USD_Million"
       }
     ]
   }

@@ -1,9 +1,11 @@
 #!/bin/bash
 
 folder_path="file_generator/datasets"
+iterations_counter=1
 
 # Iterate over subfolders
 for subfolder in "$folder_path"/*; do
+
     if [ -d "$subfolder" ]; then
         subfolder_name=$(basename "$subfolder")
         
@@ -21,14 +23,28 @@ for subfolder in "$folder_path"/*; do
                 mv metadata.ttl assets
 
                 npm run test
+
+                # Check the exit code
+                # if [ $? -eq 0 ]; then
+                #     echo "npm run test succeeded!"
+                #     # Increment the iterations counter
+                #     iterations_counter=$((iterations_counter + 1))
+                # else
+                #     echo "npm run test failed!"
+                # fi
+
                 rm "input/$file_name" 
 
                 #curl https://citygraph.cluster-cdhplnwa3hlj.us-east-1.neptune.amazonaws.com:8182/sparql/gsp/?graph=urn:graph:$(cat abr.txt) -X POST -H 'Content-Type: text/turtle' --data-binary @output/place_holder.nt"
                 #curl https://citygraph.cluster-cdhplnwa3hlj.us-east-1.neptune.amazonaws.com:8182/sparql/gsp/?graph=urn:graph:$(cat abr.txt) -X POST -H 'Content-Type: text/turtle' --data-binary @assets/metadata.ttl
-                curl https://citygraph.cluster-cdhplnwa3hlj.us-east-1.neptune.amazonaws.com:8182/sparql/gsp/?graph=urn:graph:sasha -X POST -H 'Content-Type: text/turtle' --data-binary @output/place_holder.nt
-                curl https://citygraph.cluster-cdhplnwa3hlj.us-east-1.neptune.amazonaws.com:8182/sparql/gsp/?graph=urn:graph:sasha -X POST -H 'Content-Type: text/turtle' --data-binary @assets/metadata.ttl
+                # curl -D- -H 'Content-Type: text/turtle' --upload-file output/place_holder.nt -X POST 'http://54.224.122.101:9999/bigdata/namespace/wdq/sparql?context-uri=urn:graph:sasha'
+                # curl -D- -H 'Content-Type: text/turtle' --upload-file assets/metadata.ttl -X POST 'http://54.224.122.101:9999/bigdata/namespace/wdq/sparql?context-uri=urn:graph:sasha'
                 
-                rm abr.txt
+                # rm abr.txt
+
+                # if (( iterations_counter % 11 == 0 )); then
+                #     read -p "Press Enter to continue to the next 10 iterations..."
+                # fi
             fi
         done
     fi
