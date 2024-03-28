@@ -15,7 +15,6 @@ for subfolder in "$folder_path"/*; do
                 file_name=$(basename "$file")
                 
                 # Run the file generator with file name as argument
-                
                 python3 file_generator/gen.py "$file"
                 cp "$file" "input"
                 mv test.csv.meta.json src-gen
@@ -35,8 +34,6 @@ for subfolder in "$folder_path"/*; do
 
                 rm "input/$file_name" 
 
-                #curl https://citygraph.cluster-cdhplnwa3hlj.us-east-1.neptune.amazonaws.com:8182/sparql/gsp/?graph=urn:graph:$(cat abr.txt) -X POST -H 'Content-Type: text/turtle' --data-binary @output/place_holder.nt"
-                #curl https://citygraph.cluster-cdhplnwa3hlj.us-east-1.neptune.amazonaws.com:8182/sparql/gsp/?graph=urn:graph:$(cat abr.txt) -X POST -H 'Content-Type: text/turtle' --data-binary @assets/metadata.ttl
                 # curl -D- -H 'Content-Type: text/turtle' --upload-file output/place_holder.nt -X POST 'http://54.224.122.101:9999/bigdata/namespace/wdq/sparql?context-uri=urn:graph:sasha'
                 # curl -D- -H 'Content-Type: text/turtle' --upload-file assets/metadata.ttl -X POST 'http://54.224.122.101:9999/bigdata/namespace/wdq/sparql?context-uri=urn:graph:sasha'
                 

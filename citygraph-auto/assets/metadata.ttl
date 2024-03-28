@@ -1,11 +1,11 @@
-BASE <https://citygraph.co/opendata/PaymentsBalance-MillionUSD2010-2017/>
+BASE <https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/>
 PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX schema: <http://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX cube: <https://cube.link/>
-PREFIX dimension: <https://citygraph.co/opendata/PaymentsBalance-MillionUSD2010-2017/1/dimension/>
+PREFIX dimension: <https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1/dimension/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 PREFIX meta: <https://cube.link/meta/>
 PREFIX qudt: <http://qudt.org/schema/qudt/>
@@ -15,28 +15,27 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 
 
 <1> a cube:Cube ;
-  dcterms:description "the dataset shows balance of payments (Million Dollars) in United Arab Emirates"@en ;
-  dcterms:title "Balance of Payments (Million Dollars)"@en ;
-  dcterms:identifier "Balance of Payments (Million Dollars)"@en ;
-  schema:name "Balance of Payments (Million Dollars)"@en ;
-  schema:description "the dataset shows balance of payments (Million Dollars) in United Arab Emirates"@en ;
-  dcat:theme <https://citygraph.co/opendata/theme/NationalAccounts> ;
-  schema:publisher "Federal Competitiveness and Statistics Center"@en ;
-  schema:creator <https://citygraph.co/opendata/FederalCompetitivenessandStatisticsCenter> ;
-  dcterms:creator <https://citygraph.co/opendata/FederalCompetitivenessandStatisticsCenter> ;
-  dcterms:issued "2023-08-07"^^xsd:date ;
-  dcterms:publisher "Federal Competitiveness and Statistics Center"@en ;
+  dcterms:description "This shows the Abu Dhabi fuel consumption indicators such as price for types of fuels over time"@en ;
+  dcterms:title "Abu Dhabi Fuel Consumption Indicators"@en ;
+  dcterms:identifier "Abu Dhabi Fuel Consumption Indicators"@en ;
+  schema:name "Abu Dhabi Fuel Consumption Indicators"@en ;
+  schema:description "This shows the Abu Dhabi fuel consumption indicators such as price for types of fuels over time"@en ;
+  schema:publisher "Statistics Centre − Abu Dhabi"@en ;
+  schema:creator <https://citygraph.co/opendata/StatisticsCentre−AbuDhabi> ;
+  dcterms:creator <https://citygraph.co/opendata/StatisticsCentre−AbuDhabi> ;
+  dcterms:issued "2024-03-27"^^xsd:date ;
+  dcterms:publisher "Statistics Centre − Abu Dhabi"@en ;
   schema:contributor <https://citygraph.co/opendata/cities> ;
   schema:creativeWorkStatus <https://ld.admin.ch/vocabulary/CreativeWorkStatus/Published> ;
   schema:workExample <https://ld.admin.ch/application/visualize> ;
-  dcat:landingPage "https://admin.bayanat.ae/Home/DatasetInfo?dID=qPDZWDgPHSXghovBMdKPrkUtnuUSqtucyuJLZygpTAA"^^xsd:string ;
-  schema:dateCreated "2023-08-07"^^xsd:date ;
-  schema:datePublished "2023-08-07"^^xsd:date ;
+  dcat:landingPage "https://admin.bayanat.ae/Home/DatasetInfo?dID=rYK_Q3siSqmC1kfp-JEEJS0N5YsFZsHcu5DFjRg6fQM"^^xsd:string ;
+  schema:dateCreated "2024-03-27"^^xsd:date ;
+  schema:datePublished "2024-03-27"^^xsd:date ;
   schema:version "1"^^xsd:integer ;
-  schema:dateModified "2023-08-07"^^xsd:date .
+  schema:dateModified "2024-03-27"^^xsd:date .
 
 
-<https://citygraph.co/opendata/PaymentsBalance-MillionUSD2010-2017/1> <http://www.w3.org/ns/dcat#contactPoint> [
+<https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1> <http://www.w3.org/ns/dcat#contactPoint> [
   a <http://www.w3.org/2006/vcard/ns#Organization> ;
   <http://www.w3.org/2006/vcard/ns#fn> "Bayanat.ae" ;
   <http://www.w3.org/2006/vcard/ns#hasEmail> "contact@bayanat.ae"

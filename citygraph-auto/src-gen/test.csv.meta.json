@@ -1,41 +1,36 @@
 {
   "@context": "http://www.w3.org/ns/csvw",
-  "url": "file:input/PaymentsBalance-MillionUSD2010-2017.csv",
+  "url": "file:input/AbuDhabiFuelConsumptionIndicators.csv",
   "dialect": {
     "delimiter": ","
   },
   "tableSchema": {
-    "aboutUrl": "https://citygraph.co/opendata/PaymentsBalance-MillionUSD2010-2017/1/{Item_EN}+{Item_AR}+{Type_EN}+{Type_AR}",
+    "aboutUrl": "https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1/{Year}+{Emirates}",
     "columns": [
       {
-        "propertyUrl": "https://citygraph.co/opendata/PaymentsBalance-MillionUSD2010-2017/1/dimension/year",
+        "propertyUrl": "https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1/dimension/year",
         "datatype": "integer",
-        "titles": "year"
+        "titles": "Year"
       },
       {
-        "propertyUrl": "https://citygraph.co/opendata/PaymentsBalance-MillionUSD2010-2017/1/dimension/item_en",
+        "propertyUrl": "https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1/dimension/emirates",
         "datatype": "string",
-        "titles": "Item_EN"
+        "titles": "Emirates"
       },
       {
-        "propertyUrl": "https://citygraph.co/opendata/PaymentsBalance-MillionUSD2010-2017/1/dimension/item_ar",
+        "propertyUrl": "https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1/measure/pump_price_for_diesel_fuelaedper_litre",
         "datatype": "string",
-        "titles": "Item_AR"
+        "titles": "Pump_price_for_diesel_fuel AED per_litre"
       },
       {
-        "propertyUrl": "https://citygraph.co/opendata/PaymentsBalance-MillionUSD2010-2017/1/dimension/type_en",
+        "propertyUrl": "https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1/measure/pump_price_for_gasolineaedper_litre",
         "datatype": "string",
-        "titles": "Type_EN"
+        "titles": "Pump_price_for_gasoline AED per_litre"
       },
       {
-        "propertyUrl": "https://citygraph.co/opendata/PaymentsBalance-MillionUSD2010-2017/1/dimension/type_ar",
+        "propertyUrl": "https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1/measure/*pump_price_for_gasolineaedper_litre_is_the_pump_price_of_gasoline_e-plus",
         "datatype": "string",
-        "titles": "Type_AR"
-      },
-      {
-        "propertyUrl": "https://citygraph.co/opendata/PaymentsBalance-MillionUSD2010-2017/1/dimension/usd_million",
-        "datatype": "decimal",
-        "titles": "USD_Million"
+        "titles": "* Pump_price_for_gasoline AED per_litre_is_the_pump_price_of_gasoline_E-plus"
       }
     ]
   }

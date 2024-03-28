@@ -101,7 +101,7 @@ class ShapeConverter:
                 else:
                     break
             string =  '\n'.join([','.join(row) for row in rows])
-            openai.api_key = "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"
+            openai.api_key = ""
             message = "classify the type of columns based on scale(ratio/interval/ordinal/nominal) , classify if it should be a (key dimension/measure dimension) , classify it's data type (string/integer/decimal) for the given input, the output should be printed as a csv (column,scale,dimension,data type) : "
             message += string
             response = openai.ChatCompletion.create(

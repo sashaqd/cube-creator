@@ -1,11 +1,11 @@
-BASE <https://citygraph.co/opendata/PaymentsBalance-MillionUSD2010-2017/>
+BASE <https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/>
 PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX schema: <http://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX cube: <https://cube.link/>
-PREFIX dimension: <https://citygraph.co/opendata/PaymentsBalance-MillionUSD2010-2017/1/dimension/>
+PREFIX dimension: <https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1/dimension/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 PREFIX meta: <https://cube.link/meta/>
 PREFIX qudt: <http://qudt.org/schema/qudt/>
@@ -16,39 +16,27 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 
 <1> cube:observationConstraint [
   sh:property [
-    a cube:MeasureDimension;
+    a cube:KeyDimension;
       sh:path dimension:year;
-      schema:name "year"@en;
+      schema:name "Year"@en;
       qudt:scaleType qudt:RatioScale;
       sh:datatype xsd:integer
   ],[
     a cube:KeyDimension;
-      sh:path dimension:item_en;
-      schema:name "Item_EN"@en;
-      qudt:scaleType qudt:NominalScale;
-      sh:datatype xsd:string
-  ],[
-    a cube:KeyDimension;
-      sh:path dimension:item_ar;
-      schema:name "Item_AR"@en;
-      qudt:scaleType qudt:NominalScale;
-      sh:datatype xsd:string
-  ],[
-    a cube:KeyDimension;
-      sh:path dimension:type_en;
-      schema:name "Type_EN"@en;
-      qudt:scaleType qudt:NominalScale;
-      sh:datatype xsd:string
-  ],[
-    a cube:KeyDimension;
-      sh:path dimension:type_ar;
-      schema:name "Type_AR"@en;
+      sh:path dimension:emirates;
+      schema:name "Emirates"@en;
       qudt:scaleType qudt:NominalScale;
       sh:datatype xsd:string
   ],[
     a cube:MeasureDimension;
-      sh:path dimension:usd_million;
-      schema:name "USD_Million"@en;
+      sh:path dimension:pump_price_for_diesel_fuelaedper_litre;
+      schema:name "Pump_price_for_diesel_fuel AED per_litre"@en;
+      qudt:scaleType qudt:IntervalScale;
+      sh:datatype xsd:decimal
+  ],[
+    a cube:MeasureDimension;
+      sh:path dimension:pump_price_for_gasolineaedper_litre;
+      schema:name "Pump_price_for_gasoline AED per_litre"@en;
       qudt:scaleType qudt:IntervalScale;
       sh:datatype xsd:decimal
   ]

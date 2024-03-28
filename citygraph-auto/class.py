@@ -2,8 +2,6 @@ import csv
 import openai
 import os
 
-
-# csv_path = "file_generator/datasets/Adult education – Administration staff by education zone/Administration-ADEbyZone2016-2017.csv"
 obs_count = 0
 count = 0
 
@@ -18,7 +16,7 @@ def classify(csv_path):
                 else:
                     break
             string =  '\n'.join([','.join(row) for row in rows])
-            openai.api_key = "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"
+            openai.api_key = ""
             message = "(Answer in a few words) Based on the following, does the dataset contain information about the entities or does is it contain observations related to the entites : "
             message += string
             response = openai.ChatCompletion.create(

@@ -14,18 +14,6 @@
 #     list5.append("<https://citygraph.co/opendata/"+theme+"> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .")
     
 
-# for l1 in list1:
-#     print(l1)
-# for l2 in list2:
-#     print(l2)
-# for l3 in list3:
-#     print(l3)
-# for l4 in list4:
-#     print(l4)
-# for l5 in list5:
-#     print(l5)
-
-
 import csv
 
 def create_dataset_dictionary(csv_file_path):

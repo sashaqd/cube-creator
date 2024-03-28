@@ -24,16 +24,8 @@ def create_csv(file_path):
     except Exception as e:
         pass
 
-# folder_path="file_generator/datasets"
-folder_path = "/Users/sasha/desktop/bayanat-staging"
-
-# for root, dirs, files in os.walk(folder_path):
-#     for dir in dirs:
-#         subfolder_path = os.path.join(root, dir)
-#         #if the subfolder is empty remove it
-#         if not os.listdir(subfolder_path):
-#             os.rmdir(subfolder_path)
-
+#/bayanat-staging folder
+folder_path = ""
 
 for root, dirs, files in os.walk(folder_path):
     for dir in dirs:

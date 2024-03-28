@@ -1,7 +1,5 @@
 Column,Scale,Dimension,Data Type
-year,Ratio,Measure Dimension,Integer
-Item_EN,Nominal,Key Dimension,String
-Item_AR,Nominal,Key Dimension,String
-Type_EN,Nominal,Key Dimension,String
-Type_AR,Nominal,Key Dimension,String
-USD_Million,Interval,Measure Dimension,Decimal
+Year,Ratio,Key Dimension,Integer
+Emirates,Nominal,Key Dimension,String
+Pump_price_for_diesel_fuel AED per_litre,Interval,Measure Dimension,Decimal
+Pump_price_for_gasoline AED per_litre,Interval,Measure Dimension,Decimal
