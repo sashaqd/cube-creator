@@ -23,16 +23,16 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
   schema:publisher "Statistics Centre − Abu Dhabi"@en ;
   schema:creator <https://citygraph.co/opendata/StatisticsCentre−AbuDhabi> ;
   dcterms:creator <https://citygraph.co/opendata/StatisticsCentre−AbuDhabi> ;
-  dcterms:issued "2024-03-27"^^xsd:date ;
+  dcterms:issued "2024-03-29"^^xsd:date ;
   dcterms:publisher "Statistics Centre − Abu Dhabi"@en ;
   schema:contributor <https://citygraph.co/opendata/cities> ;
   schema:creativeWorkStatus <https://ld.admin.ch/vocabulary/CreativeWorkStatus/Published> ;
   schema:workExample <https://ld.admin.ch/application/visualize> ;
   dcat:landingPage "https://admin.bayanat.ae/Home/DatasetInfo?dID=rYK_Q3siSqmC1kfp-JEEJS0N5YsFZsHcu5DFjRg6fQM"^^xsd:string ;
-  schema:dateCreated "2024-03-27"^^xsd:date ;
-  schema:datePublished "2024-03-27"^^xsd:date ;
+  schema:dateCreated "2024-03-29"^^xsd:date ;
+  schema:datePublished "2024-03-29"^^xsd:date ;
   schema:version "1"^^xsd:integer ;
-  schema:dateModified "2024-03-27"^^xsd:date .
+  schema:dateModified "2024-03-29"^^xsd:date .
 
 
 <https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1> <http://www.w3.org/ns/dcat#contactPoint> [

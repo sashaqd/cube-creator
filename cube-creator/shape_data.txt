@@ -1,5 +1,6 @@
 Column,Scale,Dimension,Data Type
 Year,Ratio,Key Dimension,Integer
 Emirates,Nominal,Key Dimension,String
-Pump_price_for_diesel_fuel AED per_litre,Interval,Measure Dimension,Decimal
-Pump_price_for_gasoline AED per_litre,Interval,Measure Dimension,Decimal
+Pump price for diesel fuel,Interval,Measure Dimension,Decimal
+Pump price for gasoline,Interval,Measure Dimension,Decimal
+Pump price for gasoline E-plus,Interval,Measure Dimension,Decimal

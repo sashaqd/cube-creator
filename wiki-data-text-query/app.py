@@ -24,7 +24,7 @@ class Query(BaseModel):
 @app.post("/run-query")
 async def run_query(query: Query) -> Any:
     
-    api_key = "" # add key here
+    api_key = "" # open ai api key here
     client = OpenAI(api_key=api_key)
 
     # text_query = input('Input your query: ')

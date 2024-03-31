@@ -29,15 +29,21 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
       sh:datatype xsd:string
   ],[
     a cube:MeasureDimension;
-      sh:path dimension:pump_price_for_diesel_fuelaedper_litre;
-      schema:name "Pump_price_for_diesel_fuel AED per_litre"@en;
-      qudt:scaleType qudt:IntervalScale;
+      sh:path dimension:pumppricefordieselfuel;
+      schema:name "Pump price for diesel fuel"@en;
+      qudt:scaleType qudt:LinearScale;
       sh:datatype xsd:decimal
   ],[
     a cube:MeasureDimension;
-      sh:path dimension:pump_price_for_gasolineaedper_litre;
-      schema:name "Pump_price_for_gasoline AED per_litre"@en;
-      qudt:scaleType qudt:IntervalScale;
+      sh:path dimension:pumppriceforgasoline;
+      schema:name "Pump price for gasoline"@en;
+      qudt:scaleType qudt:LinearScale;
+      sh:datatype xsd:decimal
+  ],[
+    a cube:MeasureDimension;
+      sh:path dimension:pumppriceforgasolinee-plus;
+      schema:name "Pump price for gasoline E-plus"@en;
+      qudt:scaleType qudt:LinearScale;
       sh:datatype xsd:decimal
   ]
 ] .

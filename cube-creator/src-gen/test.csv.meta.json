@@ -18,19 +18,19 @@
         "titles": "Emirates"
       },
       {
-        "propertyUrl": "https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1/measure/pump_price_for_diesel_fuelaedper_litre",
+        "propertyUrl": "https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1/measure/pumppricefordieselfuel",
         "datatype": "string",
-        "titles": "Pump_price_for_diesel_fuel AED per_litre"
+        "titles": "Pump price for diesel fuel"
       },
       {
-        "propertyUrl": "https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1/measure/pump_price_for_gasolineaedper_litre",
+        "propertyUrl": "https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1/measure/pumppriceforgasoline",
         "datatype": "string",
-        "titles": "Pump_price_for_gasoline AED per_litre"
+        "titles": "Pump price for gasoline"
       },
       {
-        "propertyUrl": "https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1/measure/*pump_price_for_gasolineaedper_litre_is_the_pump_price_of_gasoline_e-plus",
+        "propertyUrl": "https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1/measure/pumppriceforgasolinee-plus",
         "datatype": "string",
-        "titles": "* Pump_price_for_gasoline AED per_litre_is_the_pump_price_of_gasoline_E-plus"
+        "titles": "Pump price for gasoline E-plus"
       }
     ]
   }
