@@ -1,11 +1,11 @@
-BASE <https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/>
+BASE <https://citygraph.abudhabi.nyu.edu/opendata/17total-of-higher-education-institutions-by-emirate-sector/>
 PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX schema: <http://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX cube: <https://cube.link/>
-PREFIX dimension: <https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1/dimension/>
+PREFIX dimension: <https://citygraph.abudhabi.nyu.edu/opendata/17total-of-higher-education-institutions-by-emirate-sector/1/dimension/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 PREFIX meta: <https://cube.link/meta/>
 PREFIX qudt: <http://qudt.org/schema/qudt/>
@@ -18,32 +18,50 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
   sh:property [
     a cube:KeyDimension;
       sh:path dimension:year;
-      schema:name "Year"@en;
+      schema:name "year"@en;
       qudt:scaleType qudt:RatioScale;
-      sh:datatype xsd:integer
+      sh:datatype xsd:string
   ],[
     a cube:KeyDimension;
-      sh:path dimension:emirates;
-      schema:name "Emirates"@en;
+      sh:path dimension:emirates_en;
+      schema:name "Emirates_en"@en;
+      qudt:scaleType qudt:NominalScale;
+      sh:datatype xsd:string
+  ],[
+    a cube:KeyDimension;
+      sh:path dimension:emirates_ar;
+      schema:name "Emirates_ar"@en;
+      qudt:scaleType qudt:NominalScale;
+      sh:datatype xsd:string
+  ],[
+    a cube:KeyDimension;
+      sh:path dimension:institutionsector_en;
+      schema:name "InstitutionSector_en"@en;
+      qudt:scaleType qudt:NominalScale;
+      sh:datatype xsd:string
+  ],[
+    a cube:KeyDimension;
+      sh:path dimension:institutionsector_ar;
+      schema:name "InstitutionSector_ar"@en;
+      qudt:scaleType qudt:NominalScale;
+      sh:datatype xsd:string
+  ],[
+    a cube:KeyDimension;
+      sh:path dimension:educationinstitution_en;
+      schema:name "EducationInstitution_en"@en;
+      qudt:scaleType qudt:NominalScale;
+      sh:datatype xsd:string
+  ],[
+    a cube:KeyDimension;
+      sh:path dimension:educationinstitution_ar;
+      schema:name "EducationInstitution_ar"@en;
       qudt:scaleType qudt:NominalScale;
       sh:datatype xsd:string
   ],[
     a cube:MeasureDimension;
-      sh:path dimension:pumppricefordieselfuel;
-      schema:name "Pump price for diesel fuel"@en;
-      qudt:scaleType qudt:LinearScale;
-      sh:datatype xsd:decimal
-  ],[
-    a cube:MeasureDimension;
-      sh:path dimension:pumppriceforgasoline;
-      schema:name "Pump price for gasoline"@en;
-      qudt:scaleType qudt:LinearScale;
-      sh:datatype xsd:decimal
-  ],[
-    a cube:MeasureDimension;
-      sh:path dimension:pumppriceforgasolinee-plus;
-      schema:name "Pump price for gasoline E-plus"@en;
-      qudt:scaleType qudt:LinearScale;
+      sh:path dimension:value;
+      schema:name "value"@en;
+      qudt:scaleType qudt:IntervalScale;
       sh:datatype xsd:decimal
   ]
 ] .

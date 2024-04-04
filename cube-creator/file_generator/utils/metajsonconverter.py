@@ -34,7 +34,7 @@ class MetaJsonConverter:
                 "delimiter": ","
             },
             "tableSchema": {
-                "aboutUrl": f"https://citygraph.co/opendata/{file_name}/{self.version}/{key}",
+                "aboutUrl": f"https://citygraph.abudhabi.nyu.edu/opendata/{file_name}/{self.version}/{key}",
                 "columns": []
             }
         }
@@ -42,7 +42,7 @@ class MetaJsonConverter:
         for name, col in zip(column_names, column_names_wospace):
             try:
                 column = {
-                    "propertyUrl": f"https://citygraph.co/opendata/{file_name}/{self.version}/dimension/{col.lower()}",
+                    "propertyUrl": f"https://citygraph.abudhabi.nyu.edu/opendata/{file_name}/{self.version}/dimension/{col.lower()}",
                     "datatype": self.data_types[col]["data_type"],
                     "titles": name
                 }
@@ -50,7 +50,7 @@ class MetaJsonConverter:
             
             except KeyError:
                 column = {
-                    "propertyUrl": f"https://citygraph.co/opendata/{file_name}/{self.version}/measure/{col.lower()}",
+                    "propertyUrl": f"https://citygraph.abudhabi.nyu.edu/opendata/{file_name}/{self.version}/measure/{col.lower()}",
                     "datatype": "string",
                     "titles": name
                 }

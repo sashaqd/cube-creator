@@ -1,36 +1,51 @@
 {
   "@context": "http://www.w3.org/ns/csvw",
-  "url": "file:input/AbuDhabiFuelConsumptionIndicators.csv",
+  "url": "file:input/17total-of-higher-education-institutions-by-emirate-sector.csv",
   "dialect": {
     "delimiter": ","
   },
   "tableSchema": {
-    "aboutUrl": "https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1/{Year}+{Emirates}",
+    "aboutUrl": "https://citygraph.abudhabi.nyu.edu/opendata/17total-of-higher-education-institutions-by-emirate-sector/1/{year}+{Emirates_en}+{Emirates_ar}+{InstitutionSector_en}+{InstitutionSector_ar}+{EducationInstitution_en}+{EducationInstitution_ar}",
     "columns": [
       {
-        "propertyUrl": "https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1/dimension/year",
-        "datatype": "integer",
-        "titles": "Year"
+        "propertyUrl": "https://citygraph.abudhabi.nyu.edu/opendata/17total-of-higher-education-institutions-by-emirate-sector/1/dimension/year",
+        "datatype": "string",
+        "titles": "year"
       },
       {
-        "propertyUrl": "https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1/dimension/emirates",
+        "propertyUrl": "https://citygraph.abudhabi.nyu.edu/opendata/17total-of-higher-education-institutions-by-emirate-sector/1/dimension/emirates_en",
         "datatype": "string",
-        "titles": "Emirates"
+        "titles": "Emirates_en"
       },
       {
-        "propertyUrl": "https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1/measure/pumppricefordieselfuel",
+        "propertyUrl": "https://citygraph.abudhabi.nyu.edu/opendata/17total-of-higher-education-institutions-by-emirate-sector/1/dimension/emirates_ar",
         "datatype": "string",
-        "titles": "Pump price for diesel fuel"
+        "titles": "Emirates_ar"
       },
       {
-        "propertyUrl": "https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1/measure/pumppriceforgasoline",
+        "propertyUrl": "https://citygraph.abudhabi.nyu.edu/opendata/17total-of-higher-education-institutions-by-emirate-sector/1/dimension/institutionsector_en",
         "datatype": "string",
-        "titles": "Pump price for gasoline"
+        "titles": "InstitutionSector_en"
       },
       {
-        "propertyUrl": "https://citygraph.co/opendata/AbuDhabiFuelConsumptionIndicators/1/measure/pumppriceforgasolinee-plus",
+        "propertyUrl": "https://citygraph.abudhabi.nyu.edu/opendata/17total-of-higher-education-institutions-by-emirate-sector/1/dimension/institutionsector_ar",
         "datatype": "string",
-        "titles": "Pump price for gasoline E-plus"
+        "titles": "InstitutionSector_ar"
+      },
+      {
+        "propertyUrl": "https://citygraph.abudhabi.nyu.edu/opendata/17total-of-higher-education-institutions-by-emirate-sector/1/dimension/educationinstitution_en",
+        "datatype": "string",
+        "titles": "EducationInstitution_en"
+      },
+      {
+        "propertyUrl": "https://citygraph.abudhabi.nyu.edu/opendata/17total-of-higher-education-institutions-by-emirate-sector/1/dimension/educationinstitution_ar",
+        "datatype": "string",
+        "titles": "EducationInstitution_ar"
+      },
+      {
+        "propertyUrl": "https://citygraph.abudhabi.nyu.edu/opendata/17total-of-higher-education-institutions-by-emirate-sector/1/dimension/value",
+        "datatype": "decimal",
+        "titles": "value"
       }
     ]
   }

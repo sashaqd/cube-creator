@@ -1,6 +1,9 @@
 Column,Scale,Dimension,Data Type
-Year,Ratio,Key Dimension,Integer
-Emirates,Nominal,Key Dimension,String
-Pump price for diesel fuel,Interval,Measure Dimension,Decimal
-Pump price for gasoline,Interval,Measure Dimension,Decimal
-Pump price for gasoline E-plus,Interval,Measure Dimension,Decimal
+year,Ratio,Key Dimension,String
+Emirates_en,Nominal,Key Dimension,String
+Emirates_ar,Nominal,Key Dimension,String
+InstitutionSector_en,Nominal,Key Dimension,String
+InstitutionSector_ar,Nominal,Key Dimension,String
+EducationInstitution_en,Nominal,Key Dimension,String
+EducationInstitution_ar,Nominal,Key Dimension,String
+value,Interval,Measure Dimension,Decimal

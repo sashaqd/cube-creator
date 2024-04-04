@@ -1,0 +1,242 @@
+<https://citygraph.abudhabi.nyu.edu/opendata/cities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/cities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/cities> <http://schema.org/name> "CITIES"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/cities> <http://schema.org/description> "Project in CITIES."@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/cities> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+
+<https://citygraph.abudhabi.nyu.edu/opendata/AbuDhabiAgricultureAndFoodSafetyAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/AlJazeeraPort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/CentralBankofUnitedArabEmirates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/DepartmentofHealth-AbuDhabi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/DubaiPulse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/EmiratesPostGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/EtihadWaterandElectricity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalAuthorityForGovernmentHumanResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalAuthorityForIdentityandCitizenship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalAuthorityForNuclearRegulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalCompetitivenessandStatisticsCenter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalCustomsAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalTransportAuthority-Land&Maritime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/GeneralAuthorityofCivilAviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/GeneralAuthorityofIslamicAffairsandEndowments> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/GeneralPension&SocialSecurityAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/GovernmentofFujairah> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/HigherCollegesofTechnology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/InsuranceAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfClimateChange&Environment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofCommunityDevelopment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofCulture&KnowledgeDevelopment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfEconomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofEducation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfEnergy&Industry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofEnergy&Infrastructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofFinance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofForeignAffairsandInternationalCooperation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofHealthandPrevention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfHumanResources&Emiratizations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofIndustryandAdvancedTechnology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfInterior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofJustice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofStateforFederalNationalCouncilAffairs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/Municipality&PlanningDepartment-Ajman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/NationalMediaCouncil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/NationalQualificationAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/RasAlKhaimahMaritimeCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/RoadsandTransportAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/SecuritiesandCommoditiesAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/ShaikhZayedHousingProgramme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/StatisticsCentre−AbuDhabi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/TelecommunicationsandDigitalGovernmentRegulatoryAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/UnitedArabEmiratesSpaceAgency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/UnitedArabEmiratesUniversity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/ZakatFund> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/ZayedUniversity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://citygraph.abudhabi.nyu.edu/opendata/AbuDhabiAgricultureAndFoodSafetyAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/AlJazeeraPort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/CentralBankofUnitedArabEmirates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/DepartmentofHealth-AbuDhabi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/DubaiPulse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/EmiratesPostGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/EtihadWaterandElectricity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalAuthorityForGovernmentHumanResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalAuthorityForIdentityandCitizenship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalAuthorityForNuclearRegulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalCompetitivenessandStatisticsCenter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalCustomsAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalTransportAuthority-Land&Maritime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/GeneralAuthorityofCivilAviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/GeneralAuthorityofIslamicAffairsandEndowments> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/GeneralPension&SocialSecurityAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/GovernmentofFujairah> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/HigherCollegesofTechnology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/InsuranceAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfClimateChange&Environment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofCommunityDevelopment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofCulture&KnowledgeDevelopment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfEconomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofEducation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfEnergy&Industry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofEnergy&Infrastructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofFinance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofForeignAffairsandInternationalCooperation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofHealthandPrevention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfHumanResources&Emiratizations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofIndustryandAdvancedTechnology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfInterior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofJustice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofStateforFederalNationalCouncilAffairs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/Municipality&PlanningDepartment-Ajman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/NationalMediaCouncil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/NationalQualificationAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/RasAlKhaimahMaritimeCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/RoadsandTransportAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/SecuritiesandCommoditiesAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/ShaikhZayedHousingProgramme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/StatisticsCentre−AbuDhabi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/TelecommunicationsandDigitalGovernmentRegulatoryAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/UnitedArabEmiratesSpaceAgency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/UnitedArabEmiratesUniversity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/ZakatFund> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/ZayedUniversity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/DefinedTerm> .
+<https://citygraph.abudhabi.nyu.edu/opendata/AbuDhabiAgricultureAndFoodSafetyAuthority> <http://schema.org/name> "Abu Dhabi Agriculture And Food Safety Authority"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/AlJazeeraPort> <http://schema.org/name> "Al Jazeera Port"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/CentralBankofUnitedArabEmirates> <http://schema.org/name> "Central Bank of United Arab Emirates"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/DepartmentofHealth-AbuDhabi> <http://schema.org/name> "Department of Health - Abu Dhabi"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/DubaiPulse> <http://schema.org/name> "Dubai Pulse"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/EmiratesPostGroup> <http://schema.org/name> "Emirates Post Group"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/EtihadWaterandElectricity> <http://schema.org/name> "Etihad Water and Electricity"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalAuthorityForGovernmentHumanResource> <http://schema.org/name> "Federal Authority For Government Human Resource"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalAuthorityForIdentityandCitizenship> <http://schema.org/name> "Federal Authority For Identity and Citizenship"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalAuthorityForNuclearRegulation> <http://schema.org/name> "Federal Authority For Nuclear Regulation"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalCompetitivenessandStatisticsCenter> <http://schema.org/name> "Federal Competitiveness and Statistics Center"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalCustomsAuthority> <http://schema.org/name> "Federal Customs Authority"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalTransportAuthority-Land&Maritime> <http://schema.org/name> "Federal Transport Authority - Land & Maritime"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/GeneralAuthorityofCivilAviation> <http://schema.org/name> "General Authority of Civil Aviation"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/GeneralAuthorityofIslamicAffairsandEndowments> <http://schema.org/name> "General Authority of Islamic Affairs and Endowments"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/GeneralPension&SocialSecurityAuthority> <http://schema.org/name> "General Pension & Social Security Authority"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/GovernmentofFujairah> <http://schema.org/name> "Government of Fujairah"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/HigherCollegesofTechnology> <http://schema.org/name> "Higher Colleges of Technology"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/InsuranceAuthority> <http://schema.org/name> "Insurance Authority"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfClimateChange&Environment> <http://schema.org/name> "Ministry Of Climate Change & Environment"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofCommunityDevelopment> <http://schema.org/name> "Ministry of Community Development"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofCulture&KnowledgeDevelopment> <http://schema.org/name> "Ministry of Culture & Knowledge Development"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfEconomy> <http://schema.org/name> "Ministry Of Economy"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofEducation> <http://schema.org/name> "Ministry of Education"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfEnergy&Industry> <http://schema.org/name> "Ministry Of Energy & Industry"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofEnergy&Infrastructure> <http://schema.org/name> "Ministry of Energy & Infrastructure"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofFinance> <http://schema.org/name> "Ministry of Finance"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofForeignAffairsandInternationalCooperation> <http://schema.org/name> "Ministry of Foreign Affairs and International Cooperation"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofHealthandPrevention> <http://schema.org/name> "Ministry of Health and Prevention"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfHumanResources&Emiratizations> <http://schema.org/name> "Ministry Of Human Resources & Emiratizations"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofIndustryandAdvancedTechnology> <http://schema.org/name> "Ministry of Industry and Advanced Technology"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfInterior> <http://schema.org/name> "Ministry Of Interior"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofJustice> <http://schema.org/name> "Ministry of Justice"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofStateforFederalNationalCouncilAffairs> <http://schema.org/name> "Ministry of State for Federal National Council Affairs"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/Municipality&PlanningDepartment-Ajman> <http://schema.org/name> "Municipality & Planning Department - Ajman"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/NationalMediaCouncil> <http://schema.org/name> "National Media Council"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/NationalQualificationAuthority> <http://schema.org/name> "National Qualification Authority"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/RasAlKhaimahMaritimeCity> <http://schema.org/name> "Ras Al Khaimah Maritime City"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/RoadsandTransportAuthority> <http://schema.org/name> "Roads and Transport Authority"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/SecuritiesandCommoditiesAuthority> <http://schema.org/name> "Securities and Commodities Authority"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/ShaikhZayedHousingProgramme> <http://schema.org/name> "Shaikh Zayed Housing Programme"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/StatisticsCentre−AbuDhabi> <http://schema.org/name> "Statistics Centre − Abu Dhabi"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/TelecommunicationsandDigitalGovernmentRegulatoryAuthority> <http://schema.org/name> "Telecommunications and Digital Government Regulatory Authority"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/UnitedArabEmiratesSpaceAgency> <http://schema.org/name> "United Arab Emirates Space Agency"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/UnitedArabEmiratesUniversity> <http://schema.org/name> "United Arab Emirates University"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/ZakatFund> <http://schema.org/name> "Zakat Fund"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/ZayedUniversity> <http://schema.org/name> "Zayed University"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/AbuDhabiAgricultureAndFoodSafetyAuthority> <http://schema.org/description> "Abu Dhabi Agriculture And Food Safety Authority"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/AlJazeeraPort> <http://schema.org/description> "Al Jazeera Port"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/CentralBankofUnitedArabEmirates> <http://schema.org/description> "Central Bank of United Arab Emirates"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/DepartmentofHealth-AbuDhabi> <http://schema.org/description> "Department of Health - Abu Dhabi"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/DubaiPulse> <http://schema.org/description> "Dubai Pulse"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/EmiratesPostGroup> <http://schema.org/description> "Emirates Post Group"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/EtihadWaterandElectricity> <http://schema.org/description> "Etihad Water and Electricity"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalAuthorityForGovernmentHumanResource> <http://schema.org/description> "Federal Authority For Government Human Resource"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalAuthorityForIdentityandCitizenship> <http://schema.org/description> "Federal Authority For Identity and Citizenship"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalAuthorityForNuclearRegulation> <http://schema.org/description> "Federal Authority For Nuclear Regulation"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalCompetitivenessandStatisticsCenter> <http://schema.org/description> "Federal Competitiveness and Statistics Center"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalCustomsAuthority> <http://schema.org/description> "Federal Customs Authority"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalTransportAuthority-Land&Maritime> <http://schema.org/description> "Federal Transport Authority - Land & Maritime"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/GeneralAuthorityofCivilAviation> <http://schema.org/description> "General Authority of Civil Aviation"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/GeneralAuthorityofIslamicAffairsandEndowments> <http://schema.org/description> "General Authority of Islamic Affairs and Endowments"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/GeneralPension&SocialSecurityAuthority> <http://schema.org/description> "General Pension & Social Security Authority"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/GovernmentofFujairah> <http://schema.org/description> "Government of Fujairah"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/HigherCollegesofTechnology> <http://schema.org/description> "Higher Colleges of Technology"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/InsuranceAuthority> <http://schema.org/description> "Insurance Authority"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfClimateChange&Environment> <http://schema.org/description> "Ministry Of Climate Change & Environment"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofCommunityDevelopment> <http://schema.org/description> "Ministry of Community Development"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofCulture&KnowledgeDevelopment> <http://schema.org/description> "Ministry of Culture & Knowledge Development"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfEconomy> <http://schema.org/description> "Ministry Of Economy"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofEducation> <http://schema.org/description> "Ministry of Education"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfEnergy&Industry> <http://schema.org/description> "Ministry Of Energy & Industry"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofEnergy&Infrastructure> <http://schema.org/description> "Ministry of Energy & Infrastructure"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofFinance> <http://schema.org/description> "Ministry of Finance"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofForeignAffairsandInternationalCooperation> <http://schema.org/description> "Ministry of Foreign Affairs and International Cooperation"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofHealthandPrevention> <http://schema.org/description> "Ministry of Health and Prevention"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfHumanResources&Emiratizations> <http://schema.org/description> "Ministry Of Human Resources & Emiratizations"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofIndustryandAdvancedTechnology> <http://schema.org/description> "Ministry of Industry and Advanced Technology"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfInterior> <http://schema.org/description> "Ministry Of Interior"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofJustice> <http://schema.org/description> "Ministry of Justice"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofStateforFederalNationalCouncilAffairs> <http://schema.org/description> "Ministry of State for Federal National Council Affairs"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/Municipality&PlanningDepartment-Ajman> <http://schema.org/description> "Municipality & Planning Department - Ajman"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/NationalMediaCouncil> <http://schema.org/description> "National Media Council"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/NationalQualificationAuthority> <http://schema.org/description> "National Qualification Authority"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/RasAlKhaimahMaritimeCity> <http://schema.org/description> "Ras Al Khaimah Maritime City"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/RoadsandTransportAuthority> <http://schema.org/description> "Roads and Transport Authority"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/SecuritiesandCommoditiesAuthority> <http://schema.org/description> "Securities and Commodities Authority"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/ShaikhZayedHousingProgramme> <http://schema.org/description> "Shaikh Zayed Housing Programme"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/StatisticsCentre−AbuDhabi> <http://schema.org/description> "Statistics Centre − Abu Dhabi"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/TelecommunicationsandDigitalGovernmentRegulatoryAuthority> <http://schema.org/description> "Telecommunications and Digital Government Regulatory Authority"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/UnitedArabEmiratesSpaceAgency> <http://schema.org/description> "United Arab Emirates Space Agency"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/UnitedArabEmiratesUniversity> <http://schema.org/description> "United Arab Emirates University"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/ZakatFund> <http://schema.org/description> "Zakat Fund"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/ZayedUniversity> <http://schema.org/description> "Zayed University"@en .
+<https://citygraph.abudhabi.nyu.edu/opendata/AbuDhabiAgricultureAndFoodSafetyAuthority> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/AlJazeeraPort> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/CentralBankofUnitedArabEmirates> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/DepartmentofHealth-AbuDhabi> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/DubaiPulse> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/EmiratesPostGroup> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/EtihadWaterandElectricity> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalAuthorityForGovernmentHumanResource> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalAuthorityForIdentityandCitizenship> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalAuthorityForNuclearRegulation> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalCompetitivenessandStatisticsCenter> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalCustomsAuthority> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/FederalTransportAuthority-Land&Maritime> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/GeneralAuthorityofCivilAviation> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/GeneralAuthorityofIslamicAffairsandEndowments> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/GeneralPension&SocialSecurityAuthority> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/GovernmentofFujairah> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/HigherCollegesofTechnology> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/InsuranceAuthority> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfClimateChange&Environment> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofCommunityDevelopment> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofCulture&KnowledgeDevelopment> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfEconomy> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofEducation> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfEnergy&Industry> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofEnergy&Infrastructure> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofFinance> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofForeignAffairsandInternationalCooperation> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofHealthandPrevention> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfHumanResources&Emiratizations> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofIndustryandAdvancedTechnology> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryOfInterior> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofJustice> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/MinistryofStateforFederalNationalCouncilAffairs> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/Municipality&PlanningDepartment-Ajman> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/NationalMediaCouncil> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/NationalQualificationAuthority> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/RasAlKhaimahMaritimeCity> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/RoadsandTransportAuthority> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/SecuritiesandCommoditiesAuthority> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/ShaikhZayedHousingProgramme> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/StatisticsCentre−AbuDhabi> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/TelecommunicationsandDigitalGovernmentRegulatoryAuthority> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/UnitedArabEmiratesSpaceAgency> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/UnitedArabEmiratesUniversity> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/ZakatFund> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+<https://citygraph.abudhabi.nyu.edu/opendata/ZayedUniversity> <http://schema.org/inDefinedTermSet> <https://register.ld.admin.ch/opendataswiss/org> .
+

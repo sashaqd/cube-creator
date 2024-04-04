@@ -6,7 +6,7 @@
 <defaultVars>
   p:variable [ a p:Variable;
     p:name "observer";
-    p:value "https://citygraph.co/opendata/cities"
+    p:value "https://citygraph.abudhabi.nyu.edu/opendata/cities"
   ], [ a p:Variable;
     p:name "outputFile";
     p:value "output/place_holder.nt"

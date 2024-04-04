@@ -15,7 +15,7 @@ for subfolder in "$folder_path"/*; do
                 file_name=$(basename "$file")
                 
                 # Run the file generator with file name as argument
-                # python3 file_generator/gen.py "$file"
+                python3 file_generator/gen.py "$file"
                 cp "$file" "input"
                 mv test.csv.meta.json src-gen
                 mv shape.ttl assets
