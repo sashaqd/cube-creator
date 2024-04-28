@@ -5,33 +5,36 @@
     "delimiter": ","
   },
   "tableSchema": {
-    "aboutUrl": "https://citygraph.abudhabi.nyu.edu/opendata/AircraftsMovementByEmirate2014-2017/1/{Variable_EN-MovementType}+{Geography_EN}+{TemporalRef-Year_EN}",
+    "aboutUrl": "https://citygraph.abudhabi.nyu.edu/opendata/AircraftsMovementByEmirate2014-2017/1/{Variable_EN-MovementType}+{Unit_EN}+{Geography_EN}+{TemporalRef-Year_EN}",
     "columns": [
       {
-        "propertyUrl": "https://citygraph.abudhabi.nyu.edu/opendata/AircraftsMovementByEmirate2014-2017/1/measure/indicator",
-        "titles": "Indicator"
+        "propertyUrl": "https://citygraph.abudhabi.nyu.edu/opendata/AircraftsMovementByEmirate2014-2017/1/measure/indicator_en",
+        "datatype": "string",
+        "titles": "Indicator_EN"
       },
       {
         "propertyUrl": "https://citygraph.abudhabi.nyu.edu/opendata/AircraftsMovementByEmirate2014-2017/1/dimension/variable_en-movementtype",
-        "titles": "Movement Type"
+        "datatype": "string",
+        "titles": "Variable_EN-MovementType"
       },
       {
         "propertyUrl": "https://citygraph.abudhabi.nyu.edu/opendata/AircraftsMovementByEmirate2014-2017/1/dimension/unit_en",
-        "titles": "Unit"
+        "datatype": "string",
+        "titles": "Unit_EN"
       },
       {
         "propertyUrl": "https://citygraph.abudhabi.nyu.edu/opendata/AircraftsMovementByEmirate2014-2017/1/dimension/geography_en",
         "datatype": "string",
-        "titles": "Geography"
+        "titles": "Geography_EN"
       },
       {
         "propertyUrl": "https://citygraph.abudhabi.nyu.edu/opendata/AircraftsMovementByEmirate2014-2017/1/dimension/temporalref-year_en",
         "datatype": "integer",
-        "titles": "Year"
+        "titles": "TemporalRef-Year_EN"
       },
       {
         "propertyUrl": "https://citygraph.abudhabi.nyu.edu/opendata/AircraftsMovementByEmirate2014-2017/1/dimension/value",
-        "datatype": "decimal",
+        "datatype": "integer",
         "titles": "Value"
       }
     ]

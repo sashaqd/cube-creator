@@ -18,26 +18,26 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
   sh:property [
     a cube:KeyDimension;
       sh:path dimension:variable_en-movementtype;
-      schema:name "Movement Type"@en;
+      schema:name "Variable_EN-MovementType"@en;
       qudt:scaleType qudt:NominalScale;
       sh:datatype xsd:string
   ],[
     a cube:KeyDimension;
       sh:path dimension:unit_en;
-      schema:name "Unit"@en;
+      schema:name "Unit_EN"@en;
       qudt:scaleType qudt:NominalScale;
       sh:datatype xsd:string
   ],[
     a cube:KeyDimension;
       sh:path dimension:geography_en;
-      schema:name "Geography"@en;
+      schema:name "Geography_EN"@en;
       qudt:scaleType qudt:NominalScale;
       sh:datatype xsd:string
   ],[
     a cube:KeyDimension;
       sh:path dimension:temporalref-year_en;
-      schema:name "Year"@en;
-      qudt:scaleType qudt:IntervalScale;
+      schema:name "TemporalRef-Year_EN"@en;
+      qudt:scaleType qudt:OrdinalScale;
       sh:datatype xsd:integer
   ],[
     a cube:MeasureDimension;

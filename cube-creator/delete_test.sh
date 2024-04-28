@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Blazegraph endpoint URL
-ENDPOINT_URL="http://10.230.240.198:9999/bigdata/namespace/wdq/sparql"
+ENDPOINT_URL="http://54.224.122.101:9999/bigdata/namespace/wdq/sparql"
 
 # Extract the named graph from command-line arguments
 GRAPH_NAME="$1"

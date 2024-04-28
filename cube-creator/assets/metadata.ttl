@@ -1,11 +1,11 @@
-BASE <https://citygraph.abudhabi.nyu.edu/opendata/17total-of-higher-education-institutions-by-emirate-sector/>
+BASE <https://citygraph.abudhabi.nyu.edu/opendata/AircraftsMovementByEmirate2014-2017/>
 PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX schema: <http://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX cube: <https://cube.link/>
-PREFIX dimension: <https://citygraph.abudhabi.nyu.edu/opendata/17total-of-higher-education-institutions-by-emirate-sector/1/dimension/>
+PREFIX dimension: <https://citygraph.abudhabi.nyu.edu/opendata/AircraftsMovementByEmirate2014-2017/1/dimension/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 PREFIX meta: <https://cube.link/meta/>
 PREFIX qudt: <http://qudt.org/schema/qudt/>
@@ -15,28 +15,29 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 
 
 <1> a cube:Cube ;
-  dcterms:description "the dataset shows total of higher education institutions by emirate and sector in United Arab Emirates"@en ;
-  dcterms:title "Total of Higher Education Institutions by Emirate and Sector"@en ;
-  dcterms:identifier "Total of Higher Education Institutions by Emirate and Sector"@en ;
-  schema:name "Total of Higher Education Institutions by Emirate and Sector"@en ;
-  schema:description "the dataset shows total of higher education institutions by emirate and sector in United Arab Emirates"@en ;
-  dcat:theme <https://citygraph.abudhabi.nyu.edu/opendata/theme/EducationFacilities> ;
+  dcterms:description "Aircrafts Movement By Emirate"@en ;
+  dcterms:title "Aircrafts Movement By Emirate"@en ;
+  dcterms:identifier "Aircrafts Movement By Emirate"@en ;
+  schema:name "Aircrafts Movement By Emirate"@en ;
+  schema:description "Aircrafts Movement By Emirate"@en ;
+  dcat:theme <https://citygraph.abudhabi.nyu.edu/opendata/theme/Airports> ;
+  dcat:theme <https://citygraph.abudhabi.nyu.edu/opendata/theme/Transport> ;
   schema:publisher "Federal Competitiveness and Statistics Center"@en ;
   schema:creator <https://citygraph.abudhabi.nyu.edu/opendata/FederalCompetitivenessandStatisticsCenter> ;
   dcterms:creator <https://citygraph.abudhabi.nyu.edu/opendata/FederalCompetitivenessandStatisticsCenter> ;
-  dcterms:issued "2024-04-04"^^xsd:date ;
+  dcterms:issued "2024-04-18"^^xsd:date ;
   dcterms:publisher "Federal Competitiveness and Statistics Center"@en ;
   schema:contributor <https://citygraph.abudhabi.nyu.edu/opendata/cities> ;
   schema:creativeWorkStatus <https://ld.admin.ch/vocabulary/CreativeWorkStatus/Published> ;
   schema:workExample <https://ld.admin.ch/application/visualize> ;
-  dcat:landingPage "https://admin.bayanat.ae/Home/DatasetInfo?dID=SeUAva1FJ33IWVV0ivZNea4wXKtsCGEoToh-gKFWJB0"^^xsd:string ;
-  schema:dateCreated "2024-04-04"^^xsd:date ;
-  schema:datePublished "2024-04-04"^^xsd:date ;
+  dcat:landingPage "https://admin.bayanat.ae/Home/DatasetInfo?dID=awczfvdJErIYlcITXrIQ071tN_38RQ1tfmfXoBXP_NQ"^^xsd:string ;
+  schema:dateCreated "2024-04-18"^^xsd:date ;
+  schema:datePublished "2024-04-18"^^xsd:date ;
   schema:version "1"^^xsd:integer ;
-  schema:dateModified "2024-04-04"^^xsd:date .
+  schema:dateModified "2024-04-18"^^xsd:date .
 
 
-<https://citygraph.abudhabi.nyu.edu/opendata/17total-of-higher-education-institutions-by-emirate-sector/1> <http://www.w3.org/ns/dcat#contactPoint> [
+<https://citygraph.abudhabi.nyu.edu/opendata/AircraftsMovementByEmirate2014-2017/1> <http://www.w3.org/ns/dcat#contactPoint> [
   a <http://www.w3.org/2006/vcard/ns#Organization> ;
   <http://www.w3.org/2006/vcard/ns#fn> "Bayanat.ae" ;
   <http://www.w3.org/2006/vcard/ns#hasEmail> "contact@bayanat.ae"

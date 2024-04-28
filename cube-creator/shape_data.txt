@@ -1,9 +1,6 @@
-Column,Scale,Dimension,Data Type
-year,Ratio,Key Dimension,String
-Emirates_en,Nominal,Key Dimension,String
-Emirates_ar,Nominal,Key Dimension,String
-InstitutionSector_en,Nominal,Key Dimension,String
-InstitutionSector_ar,Nominal,Key Dimension,String
-EducationInstitution_en,Nominal,Key Dimension,String
-EducationInstitution_ar,Nominal,Key Dimension,String
-value,Interval,Measure Dimension,Decimal
+Indicator_EN,Ratio,Measure Dimension,Integer
+Variable_EN-MovementType,Nominal,Key Dimension,String
+Unit_EN,Nominal,Key Dimension,String
+Geography_EN,Nominal,Key Dimension,String
+TemporalRef-Year_EN,Ordinal,Key Dimension,Integer
+Value,Ratio,Measure Dimension,Integer

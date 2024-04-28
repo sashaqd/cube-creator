@@ -17,8 +17,8 @@ for subfolder in "$folder_path"/*; do
                 # Run the file generator with file name as argument
                 python3 file_generator/gen.py "$file"
                 cp "$file" "input"
-                mv test.csv.meta.json src-gen
-                mv shape.ttl assets
+                # mv test.csv.meta.json src-gen
+                # mv shape.ttl assets
                 mv metadata.ttl assets
 
                 npm run test
